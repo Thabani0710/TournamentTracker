@@ -1,0 +1,14 @@
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.exe.config
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.exe
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.pdb
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csprojAssemblyReference.cache
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreatePrizeForm.resources
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.Tournament_Viewer_Form.resources
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.TournamentDashBoardForm.resources
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.cache
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.CoreCompileInputs.cache
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.exe
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.pdb
