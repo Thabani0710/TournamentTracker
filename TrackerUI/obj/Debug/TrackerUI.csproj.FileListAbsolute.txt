@@ -12,3 +12,6 @@ C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\Tr
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.CoreCompileInputs.cache
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.exe
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.pdb
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerLibrary.dll
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerLibrary.pdb
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
