@@ -4,6 +4,11 @@ C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\bin\Deb
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.csprojAssemblyReference.cache
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.AssemblyInfoInputs.cache
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.AssemblyInfo.cs
-C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.dll
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.pdb
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.csproj.CopyComplete
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerLibrary\obj\Debug\netstandard2.0\TrackerLibrary.csproj.CoreCompileInputs.cache

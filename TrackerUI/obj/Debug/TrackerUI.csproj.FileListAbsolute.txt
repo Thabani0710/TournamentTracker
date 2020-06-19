@@ -15,3 +15,7 @@ C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\Tr
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerLibrary.dll
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\TrackerLibrary.pdb
 C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\Dapper.dll
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\Dapper.xml
+C:\Users\Thabani.Dongo\Desktop\Git_Repo\TournamentTracker\TrackerUI\bin\Debug\System.Data.SqlClient.xml

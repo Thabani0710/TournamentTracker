@@ -1,29 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Text;
+using TrackerLibrary.DataAccess;
 
 namespace TrackerLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
+        public static IDataConnection Connection { get; private set; }
 
-        public static void  InitializeConnections(bool database, bool textfiles)
+        public static void  InitializeConnections(DatabaseType db)
         {
-            if(database)
+            switch (db)
             {
-                // TODO - Setup the sql connector properly
-                SqlConnector sql = new SqlConnector();
-                Connections.Add(sql);
-
+                case DatabaseType.Sql:
+                    SqlConnector sql = new SqlConnector();
+                    Connection = sql;
+                    break;
+                case DatabaseType.TextFile:
+                    TextConnector text = new TextConnector();
+                    Connection = text;
+                    break;
+                default:
+                    break;
             }
+            //if(db == DatabaseType.Sql)
+            //{
+            //    // TODO - Setup the sql connector properly
+            //    SqlConnector sql = new SqlConnector();
+            //    Connections= sql;
 
-            if (textfiles)
-            {
-                // TODO - Create the Text file connection
-                TextConnector text = new TextConnector();
-                Connections.Add(text);
-            }
+            //}else if (db == DatabaseType.TextFile)
+            //{
+            //    // TODO - Create the Text file connection
+            //    TextConnector text = new TextConnector();
+            //    Connections = text;
+            //}
+        }
+        public static string CnnString(string name)
+        {
+           return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
     }
 }
