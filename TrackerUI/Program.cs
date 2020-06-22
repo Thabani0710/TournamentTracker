@@ -11,7 +11,7 @@ namespace TrackerUI
         /// <summary>
         /// The main entry point for the application.
         /// </summary> 
-        [STAThread]
+        [STAThread] 
         static void Main()
         {
             Application.EnableVisualStyles();
@@ -19,7 +19,7 @@ namespace TrackerUI
 
             // Initialize the database connections
             TrackerLibrary.GlobalConfig.InitializeConnections(TrackerLibrary.DatabaseType.TextFile);
-            Application.Run(new CreatePrizeForm());
+            Application.Run(new CreateTeamForm());
 
             //Application.Run(new TournamentDashBoardForm());
         }
