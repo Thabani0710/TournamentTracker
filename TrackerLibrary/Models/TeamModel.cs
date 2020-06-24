@@ -5,13 +5,10 @@ using System.Text;
 namespace TrackerLibrary.Models
 {
     public class TeamModel
-    {   /// <summary>
-        /// Represents Members of a particular team
-        /// </summary>
+    {
+        public int Id { get; set; }
+        public string TeamName { get; set; }
         public List<PersonModel> TeamMembers { get; set; } = new List<PersonModel>();
-        /// <summary>
-        /// Represents Name of a team member
-        /// </summary>
-        public string TeamName { get; set; } 
+        
     }
 }

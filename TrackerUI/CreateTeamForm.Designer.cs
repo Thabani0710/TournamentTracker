@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.HeaderLabel = new System.Windows.Forms.Label();
-            this.TeamName = new System.Windows.Forms.TextBox();
+            this.teamNameValue = new System.Windows.Forms.TextBox();
             this.TeamNameLabel = new System.Windows.Forms.Label();
             this.SelectTeamMemberLabel = new System.Windows.Forms.Label();
             this.addMemberButton = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             this.FirstNameLabel = new System.Windows.Forms.Label();
             this.teamMembersListBox = new System.Windows.Forms.ListBox();
             this.removeSelectedMemberButton = new System.Windows.Forms.Button();
-            this.CreateTeamButton = new System.Windows.Forms.Button();
+            this.createTeamButton = new System.Windows.Forms.Button();
             this.AdNewMemberBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,13 +61,13 @@
             this.HeaderLabel.TabIndex = 2;
             this.HeaderLabel.Text = "Create Team";
             // 
-            // TeamName
+            // teamNameValue
             // 
-            this.TeamName.Font = new System.Drawing.Font("Segoe UI Light", 16F);
-            this.TeamName.Location = new System.Drawing.Point(40, 115);
-            this.TeamName.Name = "TeamName";
-            this.TeamName.Size = new System.Drawing.Size(360, 36);
-            this.TeamName.TabIndex = 13;
+            this.teamNameValue.Font = new System.Drawing.Font("Segoe UI Light", 16F);
+            this.teamNameValue.Location = new System.Drawing.Point(40, 115);
+            this.teamNameValue.Name = "teamNameValue";
+            this.teamNameValue.Size = new System.Drawing.Size(360, 36);
+            this.teamNameValue.TabIndex = 13;
             // 
             // TeamNameLabel
             // 
@@ -262,20 +262,21 @@
             this.removeSelectedMemberButton.UseVisualStyleBackColor = true;
             this.removeSelectedMemberButton.Click += new System.EventHandler(this.removeSelectedMemberButton_Click);
             // 
-            // CreateTeamButton
+            // createTeamButton
             // 
-            this.CreateTeamButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.CreateTeamButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.CreateTeamButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.CreateTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreateTeamButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateTeamButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.CreateTeamButton.Location = new System.Drawing.Point(343, 608);
-            this.CreateTeamButton.Name = "CreateTeamButton";
-            this.CreateTeamButton.Size = new System.Drawing.Size(215, 46);
-            this.CreateTeamButton.TabIndex = 33;
-            this.CreateTeamButton.Text = "Create Team";
-            this.CreateTeamButton.UseVisualStyleBackColor = true;
+            this.createTeamButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.createTeamButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.createTeamButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.createTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createTeamButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createTeamButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.createTeamButton.Location = new System.Drawing.Point(343, 608);
+            this.createTeamButton.Name = "createTeamButton";
+            this.createTeamButton.Size = new System.Drawing.Size(215, 46);
+            this.createTeamButton.TabIndex = 33;
+            this.createTeamButton.Text = "Create Team";
+            this.createTeamButton.UseVisualStyleBackColor = true;
+            this.createTeamButton.Click += new System.EventHandler(this.createTeamButton_Click);
             // 
             // CreateTeamForm
             // 
@@ -283,14 +284,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1266, 720);
-            this.Controls.Add(this.CreateTeamButton);
+            this.Controls.Add(this.createTeamButton);
             this.Controls.Add(this.removeSelectedMemberButton);
             this.Controls.Add(this.teamMembersListBox);
             this.Controls.Add(this.AdNewMemberBox);
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMemberDropDown);
             this.Controls.Add(this.SelectTeamMemberLabel);
-            this.Controls.Add(this.TeamName);
+            this.Controls.Add(this.teamNameValue);
             this.Controls.Add(this.TeamNameLabel);
             this.Controls.Add(this.HeaderLabel);
             this.Font = new System.Drawing.Font("Segoe UI Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -307,7 +308,7 @@
         #endregion
 
         private System.Windows.Forms.Label HeaderLabel;
-        private System.Windows.Forms.TextBox TeamName;
+        private System.Windows.Forms.TextBox teamNameValue;
         private System.Windows.Forms.Label TeamNameLabel;
         private System.Windows.Forms.Label SelectTeamMemberLabel;
         private System.Windows.Forms.Button addMemberButton;
@@ -324,6 +325,6 @@
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.ListBox teamMembersListBox;
         private System.Windows.Forms.Button removeSelectedMemberButton;
-        private System.Windows.Forms.Button CreateTeamButton;
+        private System.Windows.Forms.Button createTeamButton;
     }
 }
