@@ -140,7 +140,7 @@ namespace TrackerUI
             t.TeamName = teamNameValue.Text;
             t.TeamMembers = selectedTeamMembers;
 
-            t = GlobalConfig.Connection.CreateTeam(t);
+            WireUpLists();
 
             //TODO - If we are not closing this form after creation, reset the form
         }
