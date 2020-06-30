@@ -30,7 +30,7 @@
         {
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.RoundLabel = new System.Windows.Forms.Label();
-            this.tournamentName = new System.Windows.Forms.TextBox();
+            this.tournamentNameValue = new System.Windows.Forms.TextBox();
             this.entryFeeValue = new System.Windows.Forms.TextBox();
             this.entryfeeLabel = new System.Windows.Forms.Label();
             this.selectTeamDropDown = new System.Windows.Forms.ComboBox();
@@ -71,14 +71,14 @@
             this.RoundLabel.Text = "Tournament Name:";
             this.RoundLabel.UseMnemonic = false;
             // 
-            // tournamentName
+            // tournamentNameValue
             // 
-            this.tournamentName.Font = new System.Drawing.Font("Segoe UI Light", 16F);
-            this.tournamentName.Location = new System.Drawing.Point(26, 120);
-            this.tournamentName.Name = "tournamentName";
-            this.tournamentName.Size = new System.Drawing.Size(354, 36);
-            this.tournamentName.TabIndex = 11;
-            this.tournamentName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tournamentNameValue.Font = new System.Drawing.Font("Segoe UI Light", 16F);
+            this.tournamentNameValue.Location = new System.Drawing.Point(26, 120);
+            this.tournamentNameValue.Name = "tournamentNameValue";
+            this.tournamentNameValue.Size = new System.Drawing.Size(354, 36);
+            this.tournamentNameValue.TabIndex = 11;
+            this.tournamentNameValue.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // entryFeeValue
             // 
@@ -260,6 +260,7 @@
             this.createTournamentbutton.TabIndex = 32;
             this.createTournamentbutton.Text = "Create Tournament";
             this.createTournamentbutton.UseVisualStyleBackColor = true;
+            this.createTournamentbutton.Click += new System.EventHandler(this.createTournamentbutton_Click);
             // 
             // CreateTournamentForm
             // 
@@ -281,7 +282,7 @@
             this.Controls.Add(this.SelectTeamLabel);
             this.Controls.Add(this.entryFeeValue);
             this.Controls.Add(this.entryfeeLabel);
-            this.Controls.Add(this.tournamentName);
+            this.Controls.Add(this.tournamentNameValue);
             this.Controls.Add(this.RoundLabel);
             this.Controls.Add(this.HeaderLabel);
             this.Font = new System.Drawing.Font("Segoe UI Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -298,7 +299,7 @@
 
         private System.Windows.Forms.Label HeaderLabel;
         private System.Windows.Forms.Label RoundLabel;
-        private System.Windows.Forms.TextBox tournamentName;
+        private System.Windows.Forms.TextBox tournamentNameValue;
         private System.Windows.Forms.TextBox entryFeeValue;
         private System.Windows.Forms.Label entryfeeLabel;
         private System.Windows.Forms.ComboBox selectTeamDropDown;
