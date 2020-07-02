@@ -5,7 +5,12 @@ using System.Text;
 namespace TrackerLibrary.Models
 {
     public class MatchEntryModel
-    {   /// <summary>
+    {
+        /// <summary>
+        /// The unique identifier for the matchup entry
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Represent one team in the matchup
         /// </summary>
         public TeamModel TeamCompeting { get; set; }

@@ -128,13 +128,7 @@ namespace TrackerUI
 
         private void removeSelectedPrizebutton_Click(object sender, EventArgs e)
         {
-            //TeamModel t = (TeamModel)tournamentTeamsListBox.SelectedItem;
-            //if (t != null)
-            //{
-            //    selectedTeams.Remove(t);
-            //    availableTeams.Add(t);
-            //}
-
+           
             PrizeModel p = (PrizeModel)prizesListBox.SelectedItem;
 
             if (p != null)
