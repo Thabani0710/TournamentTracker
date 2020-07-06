@@ -13,6 +13,8 @@ namespace TrackerLibrary.DataAccess
         private const string PeopleFile = "PersonModels.csv";
         private const string TeamFile = "TeamModels.csv";
         private const string TournamentFile = "TournamentModels.csv";
+        private const string MatchFile = "MatchupModels.csv";
+        private const string MatchupEntryFile = "MatchupEntryModels.csv";
 
         public PersonModel CreatePerson(PersonModel model)
         {
@@ -37,7 +39,7 @@ namespace TrackerLibrary.DataAccess
         public PrizeModel CreatePrize(PrizeModel model)
         {
             // Load the textfile and  Convert the test to List<PrizeModel>
-            List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeMode();
+            List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModel();
 
             // Find the max ID
             int currentId = 1;
@@ -70,29 +72,9 @@ namespace TrackerLibrary.DataAccess
 
             teams.Add(model);
 
-            teams.SaveToTeamFile(TeamFile);
+            teams.SaveToTeamFile(TeamFile); 
 
             return model;
-        }
-
-        public void CreateTournament(TournamentModel model)
-        {
-            List<TournamentModel> tournaments = TournamentFile
-                .FullFilePath()
-                .LoadFile()
-                .ConvertToTournamentModels(TeamFile, PeopleFile,PrizesFile);
-
-            int currentID = 1;
-
-            if (tournaments.Count > 0)
-            {
-                currentID = tournaments.OrderByDescending(x => x.Id).First().Id + 1;
-            }
-            model.Id = currentID;
-
-            tournaments.Add(model);
-
-            tournaments.SaveToTournamentFile(TournamentFile);
         }
 
         public List<PersonModel> GetPerson_All()
@@ -103,6 +85,27 @@ namespace TrackerLibrary.DataAccess
         public List<TeamModel> GetTeam_All()
         {
              return TeamFile.FullFilePath().LoadFile().ConvertToTeamModel(PeopleFile);
+        }
+        public void CreateTournament(TournamentModel model)
+        {
+            List<TournamentModel> tournaments = TournamentFile
+                .FullFilePath()
+                .LoadFile()
+                .ConvertToTournamentModels(TeamFile, PeopleFile, PrizesFile);
+
+            int currentID = 1;
+
+            if (tournaments.Count > 0)
+            {
+                currentID = tournaments.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+            model.Id = currentID;
+
+            model.SaveRoundsToFile(MatchFile, MatchupEntryFile);
+
+            tournaments.Add(model);
+
+            tournaments.SaveToTournamentFile(TournamentFile);
         }
     }
 }
